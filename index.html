@@ -1,16 +1,31 @@
 <!doctype html>
 
+<title>Quack</title>
 <html lang="en">
 
 <head>
 
-  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" integrity="sha384-Nlo8b0yiGl7Dn+BgLn4mxhIIBU6We7aeeiulNCjHdUv/eKHx59s3anfSUjExbDxn" crossorigin="anonymous">
 
 </head>
 
-<body>
+<body id="body">
+    <div class="row row-cols-1">
+        <button onclick="changeBackground()" id="btnTitle"><h1 id="title">Search Engine name here</h1></button>
+        <div class="col" id="colCentered">
+            <input type="text" id="query" />
+            <button onclick="onSearchClick()" id="searchBtn" class="btn btn-secondary">Search</button>
+            <button onclick="time()" class="btn btn-secondary" id="timeBtn">Time</button>
+            <div id="searchResults"></div>
+            <div id="time" title="Current Time"></div>
+        </div>
+    </div>
 
-  <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha384-Dziy8F2VlJQLMShA6FHWNul/veM9bCkRUaLqr199K94ntO5QUrLJBEbYegdSkkqX" crossorigin="anonymous"></script>
 
 </body>
 
