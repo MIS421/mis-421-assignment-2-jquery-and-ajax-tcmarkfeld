@@ -37,12 +37,13 @@ function onSearchClick() {
 
 function changeBackground() {
     console.log(document.getElementById("body").style.backgroundImage)
-    if (document.getElementById("body").style.backgroundImage = "url(https://images.unsplash.com/photo-1642866737821-532bc817c068?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)") {
-        document.getElementById("body").style.backgroundImage = "url('https://images.unsplash.com/photo-1643273038626-59942bbad9ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')";
-    } else if (document.getElementById("body").style.backgroundImage == "url('https://images.unsplash.com/photo-1643273038626-59942bbad9ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')") {
-        document.getElementById("body").style.backgroundImage = "url(https://images.unsplash.com/photo-1506934165073-af5df0640dc3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)";
-    } else if (document.getElementById("body").style.backgroundImage = "url(https://images.unsplash.com/photo-1506934165073-af5df0640dc3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)") {
-        document.getElementById("body").style.backgroundImage = "url(https://images.unsplash.com/photo-1642866737821-532bc817c068?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)";
+    if (document.getElementById("body").style.backgroundImage == 'url("https://images.unsplash.com/photo-1642753176692-ddac25863ff7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80")') {
+        console.log('if')
+        document.getElementById("body").style.backgroundImage = "url('https://images.unsplash.com/photo-1642970047663-3010fe472192?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')";
+    }
+    else {
+        console.log('else')
+        document.getElementById("body").style.backgroundImage = "url('https://images.unsplash.com/photo-1642753176692-ddac25863ff7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')";
     }
 }
 
